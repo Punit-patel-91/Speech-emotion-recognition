@@ -1,11 +1,72 @@
-# Task 2 - Emotion Recognition from Speech
+# Speech Emotion Recognition
 
-Objective: recognize emotions such as happy, sad, angry, etc. from speech audio.
+A Deep Learning project that recognizes human emotions from speech audio using the RAVDESS dataset.
 
-Approach: MFCC + delta + delta-delta speech features with a Convolutional Neural Network (CNN).
+## Project Objective
 
-Dataset: RAVDESS Speech. The filename encodes the emotion, so no CSV label file is required.
+The main objective of this project is to classify emotions from speech signals using audio features and a Convolutional Neural Network (CNN).
 
-Outputs: Accuracy, Precision, Recall, F1-Score, confusion matrix, accuracy curve, loss curve, and saved Keras model.
+## Emotions Recognized
 
-The project is for academic demonstration and is not a clinical or psychological assessment tool.
+The model is trained to recognize different emotions from speech, including:
+
+- Neutral
+- Calm
+- Happy
+- Sad
+- Angry
+- Fearful
+- Disgust
+- Surprised
+
+## Technologies Used
+
+- Python
+- TensorFlow / Keras
+- Librosa
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+## Methodology
+
+1. Load speech audio files from the RAVDESS dataset.
+2. Extract MFCC features from audio signals.
+3. Prepare and encode emotion labels.
+4. Split the dataset into training and testing sets.
+5. Train a Convolutional Neural Network (CNN).
+6. Evaluate the model using classification metrics.
+7. Generate confusion matrix, accuracy curve and loss curve.
+8. Save the trained model for future use.
+
+## Model Performance
+
+The trained model achieved approximately:
+
+- Accuracy: 80%
+- Precision: 81%
+- Recall: 80%
+- F1-Score: 80%
+
+## Project Outputs
+
+The project generates:
+
+- Confusion Matrix
+- Accuracy Curve
+- Loss Curve
+- Classification Report
+- Trained Keras Model
+
+## Dataset
+
+This project uses the RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song) dataset.
+
+The dataset is not included in this repository because of its large size.
+
+## How to Run
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
